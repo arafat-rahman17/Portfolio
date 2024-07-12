@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/865a18ef7a.js" crossorigin="anonymous"></script>
+    <link id="favicon" rel="icon" type="image/png" href="Images/A.png">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/A.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <i class="fa-solid fa-xmark" onclick="colsemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Tach Enthusiast</p>
+                <h1>Hi, I'am <span>Arafat</span> <br>Rahman from Bangladesh</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/ar1.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Arafat Rahman, currently an undergraduate student of the Department of Computer Science and Engineering, Pundra University of Science & Technology, Bogura, Bangladesh. I have two years of hands-on experience in deep cybersecurity and one year of hands-on experience in full stack development and artificial intelligence. My expertise lies in the field of web development, cybersecurity, and artificial intelligence. I am also interested in learning Natural Language Processing by harnessing the power of Large Language Models as it is a growing trend now.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>AI Development</span><br> AI Software Development</li>
+                            <li><span>Cyber Security</span><br> Cyber Security Expert</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-Current</span><br> Web App Development at Upwork</li>
+                            <li><span>2023-Current</span><br> AI Software Development at Upwork</li>
+                            <li><span>2022-2024</span><br> Cyber Security Expert at Bugcrowd</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018</span><br> SSC Passed from Gabtali Pilot High School, Bogura</li>
+                            <li><span>2020</span><br> HSC Passed from Govt. Shah Sultan College, Bogura</li>
+                            <li><span>2023-Current</span><br> Undergraduate student of the Department of Computer Science and Engineering, Pundra University of Science & Technology, Bogura</li>
+                        </ul>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>I have one year of hands-on experience in full stack development</p>
+                    <a href="https://github.com/arafat-rahman17/Netfilix_Clone">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-brain"></i>
+                    <h2>AI Software Development</h2>
+                    <p>I have one year of hands-on experience in AI software development</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <h2>Cyber Security</h2>
+                    <p>I have three years of hands-on experience in Cyber Security</p>
+                    <a href="https://hackerone.com/arafat1746">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/entertainment.jpeg" >
+                    <div class="layer">
+                        <h3>Entertainment Website</h3>
+                        <p>This is my Entertainment Website, where you'll find the latest news and trends in TV, movies, music</p>
+                        <a href="https://arafat-rahman17.github.io/Netfilix_Clone"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Ai.jpeg" >
+                    <div class="layer">
+                        <h3>AI Software</h3>
+                        <p>This is my AI software, which allows machines to learn and act like humans</p>
+                        <a href="Images/AI.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/cy.jpeg" >
+                    <div class="layer">
+                        <h3>Cyber Security</h3>
+                        <p>I have three years of hands-on experience in deep cybersecurity</p>
+                        <a href="Images/Cyb.pdf"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <div id="contact"> 
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> arafatrahman174690@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +8801726847950</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/arafat1746"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/arafat1746"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/arafat-rahman17"><i class="fa-brands fa-github"></i></i></a>
+                        <a href="https://x.com/Arafat1746"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://hackerone.com/arafat1746"><i class="fa-brands fa-hackerrank"></i></i></a>
+                    </div>
+                    <a href="Images/CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy;2024 Arafat Rahman All rights reserved.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+
+        }
+        function colsemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzXO5NEJTB8xLxh2Zirc2ZXSQZYml3RSYTiA9aKdCY4T0uKDTXi-xMRITO5YbIcvmh0KQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      <script>
+        function changeFaviconColor() {
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    const img = new Image();
+
+    img.onload = function() {
+        canvas.width = img.width;
+        canvas.height = img.height;
+
+        context.drawImage(img, 0, 0);
+        const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+        const data = imageData.data;
+
+        for (let i = 0; i < data.length; i += 4) {
+            data[i] = 255;
+            data[i + 1] = 0;
+            data[i + 2] = 0; 
+        }
+
+        context.putImageData(imageData, 0, 0);
+
+        const favicon = document.getElementById('favicon');
+        favicon.href = canvas.toDataURL('image/png');
+    };
+
+    img.src = 'Images/A.png';
+}
+
+changeFaviconColor();
+
+      </script>
+</body>
+</html> 
